@@ -5,13 +5,13 @@ Most responses from the Twitch IRC Server are relayed to Unity3D’s console win
 
 Prerequisites: 
 1: Passwords - Two text files (1 for TwitchBot OAuth password, 1 for Database password) are expected to be present in the Unity3D path \Assets\Resources\ .
-	1a: TwitchBot OAuth – filename: pass.txt
-	1b: Database – filename: dbpass.txt
+1a: TwitchBot OAuth – filename: pass.txt
+1b: Database – filename: dbpass.txt
 
 2: MySQL database with the following schema:
-	2a: Name – streamoverlay
-	2b: Table – viewers
-	2c: Columns – ID (int11, Auto-Increment, Primary Key), Name (varchar45), Follower (bool), 	Subscriber (bool), Wallet (int11), LastSeen (datetime).
+2a: Name – streamoverlay
+2b: Table – viewers
+2c: Columns – ID (int11, Auto-Increment, Primary Key), Name (varchar45), Follower (bool), 	Subscriber (bool), Wallet (int11), LastSeen (datetime).
 
 3: MySQL database User. Add a user of name “overlayuser”, and grant this user read/write privileges to “streamoverlay”.
 
@@ -32,4 +32,3 @@ BotInstance has 2 registered Event Handlers to catch known prefixes from the Twi
 
 Other: 
 For my “in-use” version, there are multiple Unity3D specific variable assignments the classes will expect. If I have missed commenting out any of these, you will get a “Null Object Reference” error. Please report any of these to the Issues section of this repository so I may resolve them as soon as possible.
-

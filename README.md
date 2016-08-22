@@ -1,7 +1,7 @@
 # Unity3D-Twitch-ChatBot-with-MySQL
 A Twitch ChatBot for Unity3d, with a MySQL Database link. Designed for my use, but source open to all.
 
-Most responses from the Twitch IRC Server are relayed to Unity3D’s console window. Be sure to monitor it for responses/errors.  
+Add a new GameObject to the scene (name it whatever you like), add the script “StartUpScript” to this new GameObject.  
 
 Prerequisites: 
 1: Passwords, Bot Name, Channel - Two text files (1 for TwitchBot OAuth password, 1 for Database password) are expected to be present in the Unity3D path \Assets\Resources\ .  
@@ -21,6 +21,7 @@ Prerequisites:
 4: DLL’s – MySQL.Data.dll and System.Data.dll , must be present in the Unity3D path \Assets\Plugins\ .  
 
 Notables: 
+Most responses from the Twitch IRC Server are relayed to Unity3D’s console window. Be sure to monitor it for responses/errors.  
 BotInstance class is a Singleton model. It is designed to be created/instantiated by the following method: “BotInstance.Add()”. Once this method is called upon, the singleton gameobject/class will persist through all scene changes unless removed manually.  
 TwitchIRC class is intended to only be used by the BotInstance. When making references to the TwitchIRC class, do so from the BotInstance instead of the TwitchIRC class itself.
 

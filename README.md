@@ -4,16 +4,16 @@ A Twitch ChatBot for Unity3d, with a MySQL Database link. Designed for my use, b
 Most responses from the Twitch IRC Server are relayed to Unity3D’s console window. Be sure to monitor it for responses/errors.
 
 Prerequisites: 
-1: Passwords - Two text files (1 for TwitchBot OAuth password, 1 for Database password) are expected to be present in the Unity3D path \Assets\Resources\ .
-1a: TwitchBot OAuth – filename: pass.txt
-1b: Database – filename: dbpass.txt
+1: Passwords - Two text files (1 for TwitchBot OAuth password, 1 for Database password) are expected to be present in the Unity3D path \Assets\Resources\ .  
+1a: TwitchBot OAuth – filename: pass.txt  
+1b: Database – filename: dbpass.txt  
 
-2: MySQL database with the following schema:
-2a: Name – streamoverlay
-2b: Table – viewers
-2c: Columns – ID (int11, Auto-Increment, Primary Key), Name (varchar45), Follower (bool), 	Subscriber (bool), Wallet (int11), LastSeen (datetime).
+2: MySQL database with the following schema:  
+2a: Name – streamoverlay  
+2b: Table – viewers  
+2c: Columns – ID (int11, Auto-Increment, Primary Key), Name (varchar45), Follower (bool), 	Subscriber (bool), Wallet (int11), LastSeen (datetime).  
 
-3: MySQL database User. Add a user of name “overlayuser”, and grant this user read/write privileges to “streamoverlay”.
+3: MySQL database User. Add a user of name “overlayuser”, and grant this user read/write privileges to “streamoverlay”.  
 
 Notables: 
 BotInstance class is a Singleton model. It is designed to be created/instantiated by the following method: “BotInstance.Add()”. Once this method is called upon, the singleton gameobject/class will persist through all scene changes unless removed manually.

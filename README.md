@@ -8,7 +8,7 @@ Prerequisites:
 1a: TwitchBot OAuth – filename: pass.txt  
 1b: Database – filename: dbpass.txt  
 1c: Bot Name – Within BotInstance class, change string variable mBotName to your Bot name.  
-1d: Channel – Within BotInstance class, change string variable mChannel to your Twitch name.  
+1d: Channel – Within BotInstance class, change string variable mChannelName to your Twitch name.  
 
 
 2: MySQL database with the following schema:  

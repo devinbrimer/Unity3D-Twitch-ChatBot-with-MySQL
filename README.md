@@ -15,6 +15,8 @@ Prerequisites:
 
 3: MySQL database User. Add a user of name “overlayuser”, and grant this user read/write privileges to “streamoverlay”.  
 
+4: DLL’s – MySQL.Data.dll and System.Data.dll , must be present in the Unity3D path \Assets\Plugins\ .  
+
 Notables: 
 BotInstance class is a Singleton model. It is designed to be created/instantiated by the following method: “BotInstance.Add()”. Once this method is called upon, the singleton gameobject/class will persist through all scene changes unless removed manually.  
 TwitchIRC class is intended to only be used by the BotInstance. When making references to the TwitchIRC class, do so from the BotInstance instead of the TwitchIRC class itself.

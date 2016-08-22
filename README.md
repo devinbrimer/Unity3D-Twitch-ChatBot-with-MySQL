@@ -4,7 +4,7 @@ A Twitch ChatBot for Unity3d, with a MySQL Database link. Designed for my use, b
 Most responses from the Twitch IRC Server are relayed to Unity3D’s console window. Be sure to monitor it for responses/errors.
 
 Prerequisites: 
-1: Passwords - Two text files (1 for TwitchBot OAuth password, 1 for Database password) are expected to be present in the Unity3D path \Assets\Resources\ . 
+1: Passwords - Two text files (1 for TwitchBot OAuth password, 1 for Database password) are expected to be present in the Unity3D path \Assets\Resources\ .
 	1a: TwitchBot OAuth – filename: pass.txt
 	1b: Database – filename: dbpass.txt
 

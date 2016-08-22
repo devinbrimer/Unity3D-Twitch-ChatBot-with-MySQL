@@ -32,3 +32,4 @@ BotInstance has 2 registered Event Handlers to catch known prefixes from the Twi
 
 Other: 
 For my “in-use” version, there are multiple Unity3D specific variable assignments the classes will expect. If I have missed commenting out any of these, you will get a “Null Object Reference” error. Please report any of these to the Issues section of this repository so I may resolve them as soon as possible.
+
